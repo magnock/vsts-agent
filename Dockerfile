@@ -1,10 +1,10 @@
 from consultent/azure-pipelines-vsts-agent:latest
 
 RUN apt-get update && apt-get install -yq \
-    firefox-esr=52.6.0esr-1~deb9u1 \
-    chromium=62.0.3202.89-1~deb9u1 \
-    xvfb=2:1.19.2-1+deb9u2 \
-    xsel=1.2.0-2+b1
+    firefox-esr \
+    chromium \
+    xvfb \
+    xsel
     
 # GeckoDriver v0.19.1
 RUN wget -q "https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-linux64.tar.gz" -O /tmp/geckodriver.tgz \
